@@ -124,3 +124,42 @@ footer {
 .hamburger {
     display: none;
 }
+
+@media only screen and (max-width: 700px) {
+
+    nav ul li {
+        display:block;
+        background-color: rgba(189, 189, 189, 1);
+        padding: 1%;
+        text-align: center;      
+    }
+    .hamburger {
+        display:block; 
+    }
+    aside {
+        position: absolute;
+        top: 47%;
+        width: 92%;
+        right: 3%;
+        margin-left: 1%;
+        margin-right: 1%;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(189, 189, 189, 1);
+        border-radius: 10px;
+    }
+    p {
+        margin-right: 1%;
+        padding: 1%;
+        width: 95%
+    }
+    h2 {
+        font-weight: bold;
+        text-align: left;
+        border-bottom: 1px solid rgba(189, 189, 189, 1);
+        width: 95%;
+        padding: 1%;
+        margin-bottom: 0; 
+        padding-bottom: 0; 
+        margin-top: 47%;
+    }
+    }
