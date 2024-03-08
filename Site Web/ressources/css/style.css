@@ -92,10 +92,15 @@ nav ul li {
     background-color: rgba(189, 189, 189, 1);
     padding: 1%;
 }
+nav ul li:hover {
+    background-color: white;
+    color: rgba(0, 165, 227, 1);
+    font-weight: bold;
+}
 
 aside {
     position: absolute;
-    top: 30%;
+    top: 40%;
     right: 5%;
     width: 30%;
     margin-left: 1%;
