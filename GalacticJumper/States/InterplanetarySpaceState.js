@@ -1,0 +1,3 @@
+class InterplanetarySpaceState extends State {
+    
+}

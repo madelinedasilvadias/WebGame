@@ -1,0 +1,3 @@
+class Meteorite extends Item {
+    
+}
