@@ -129,6 +129,12 @@ footer {
     display: none;
 }
 
+.image{
+    width: 40%;
+    display: block;
+    margin: 0 8%;
+}
+
 @media only screen and (max-width: 700px) {
 
     nav ul li {
@@ -157,7 +163,7 @@ footer {
     }
     aside {
         position: block;
-        top: 88%;
+        top: 85%;
         right: 3%;
         left: 3%;
         width: 90%;
@@ -168,12 +174,23 @@ footer {
         transform: translateY(650%);
         
     }
-    footer {
-        margin-top: 40% ;
-    }
-    
-    }
 
     .image{
-        width: 40%;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 50%;
+        background-color: rgba(189, 189, 189, 1);
+        padding: 5%;
+        clear: both;
+    }
+    
+    #logo {
+        float: right;
+        width: 25%;
+        transform: translateY(-50%);
+    }
+
+    
     }
