@@ -1,0 +1,3 @@
+class BlackHole extends Item {
+    
+}

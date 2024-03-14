@@ -1,0 +1,3 @@
+class Satellite extends Item {
+    
+}
