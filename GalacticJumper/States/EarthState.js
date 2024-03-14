@@ -1,0 +1,3 @@
+class EarthState extends State {
+    
+}
