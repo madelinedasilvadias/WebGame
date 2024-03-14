@@ -165,9 +165,15 @@ footer {
         background-color: white;
         box-shadow: 0 0 10px rgba(189, 189, 189, 1);
         border-radius: 10px;
+        transform: translateY(650%);
+        
     }
     footer {
         margin-top: 40% ;
     }
     
+    }
+
+    .image{
+        width: 40%;
     }
