@@ -134,6 +134,22 @@ footer {
     display: block;
     margin: 0 8%;
 }
+table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  h4 {
+    font-weight: bold;
+    text-align: left;
+    width: 95%;
+    padding: 1%;
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -161,6 +177,8 @@ footer {
         margin-bottom: 0; 
         padding-bottom: 0; 
     }
+    
+   
     aside {
         position: block;
         top: 85%;
@@ -192,5 +210,5 @@ footer {
         transform: translateY(-50%);
     }
 
-    
+   
     }
