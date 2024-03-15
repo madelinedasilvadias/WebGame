@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:200,400,wght@1,1000&display=swap');
 
 
-    /*gris : rgba(189,189,189,1)
-    bleu : rgba(0, 165, 227, 1)*/
+
+    :root {
+        --violet: rgba(134, 92, 130, 1);
+        --gris: rgba(189,189,189,1);
+      }
 
 * {
     margin: 0;
@@ -22,7 +25,7 @@ header a {
 }
 
 header p {
-    color: rgba(189, 189, 189, 1);
+    color: var(--gris);
     font-style: italic;
     margin-top: 0; 
     padding-top: 0;
@@ -40,7 +43,7 @@ header nav ul {
 }
 
 h1 {
-    background-image: url("../images/beau-tir-lac-cristallin-cote-base-montagne-enneigee-au-cours-journee-ensoleillee.jpg");
+    background-image: url("../images/planetes.png");
     color: white;
     text-align: left;
     background-size: cover;
@@ -55,14 +58,14 @@ h1 {
 }
 
 .active a {
-    color: rgba(0, 165, 227, 1);
+    color: var(--violet);
     font-weight: bold;
 }
 
 h2 {
     font-weight: bold;
     text-align: left;
-    border-bottom: 1px solid rgba(189, 189, 189, 1);
+    border-bottom: 1px solid var(--gris);
     width: 63%;
     padding: 1%;
     margin-bottom: 0; 
@@ -70,7 +73,7 @@ h2 {
 }
 
 h3 {
-    background-color: rgba(0, 165, 227, 1);
+    background-color: var(--violet);
     color: white;
     padding: 3%;
     margin-top: 0; 
@@ -87,18 +90,18 @@ p {
 }
 
 nav ul {
-    background-color: rgba(189, 189, 189, 1);
+    background-color: var(--gris);
     padding: 0;
 }
 
 nav ul li {
     display: inline-block;
-    background-color: rgba(189, 189, 189, 1);
+    background-color: var(--gris);
     padding: 1%;
 }
 nav ul li:hover {
     background-color: white;
-    color: rgba(0, 165, 227, 1);
+    color: var(--violet);
     font-weight: bold;
 }
 
@@ -109,12 +112,12 @@ aside {
     width: 30%;
     margin-left: 1%;
     background-color: white;
-    box-shadow: 0 0 10px rgba(189, 189, 189, 1);
+    box-shadow: 0 0 10px var(--gris);
     border-radius: 10px;
 }
 
 footer {
-    background-color: rgba(189, 189, 189, 1);
+    background-color: var(--gris);
     padding: 3%;
     clear: both;
 }
@@ -155,7 +158,7 @@ table {
 
     nav ul li {
         display:block;
-        background-color: rgba(189, 189, 189, 1);
+        background-color: var(--gris);
         padding: 1%;
         text-align: center;      
     }
@@ -171,7 +174,8 @@ table {
     h2 {
         font-weight: bold;
         text-align: left;
-        border-bottom: 1px solid rgba(189, 189, 189, 1);
+        border-bottom: 1px solid var(--gris)
+        ;
         width: 95%;
         padding: 1%;
         margin-bottom: 0; 
@@ -187,7 +191,7 @@ table {
         width: 90%;
         margin-left: 1%;
         background-color: white;
-        box-shadow: 0 0 10px rgba(189, 189, 189, 1);
+        box-shadow: 0 0 10px var(--gris);
         border-radius: 10px;
         transform: translateY(650%);
         
@@ -199,8 +203,9 @@ table {
 
     footer {
         margin-top: 50%;
-        background-color: rgba(189, 189, 189, 1);
+        background-color: var(--gris);
         padding: 5%;
+
         clear: both;
     }
     
