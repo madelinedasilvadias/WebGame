@@ -66,7 +66,7 @@ h2 {
     font-weight: bold;
     text-align: left;
     border-bottom: 1px solid var(--gris);
-    width: 63%;
+    width: 98%;
     padding: 1%;
     margin-bottom: 0; 
     padding-bottom: 0; 
@@ -83,9 +83,23 @@ h3 {
     border-top-right-radius: 10px;
 }
 
+h4 {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 18%;
+}
+
+h5 {
+    
+    margin-left: 18%;
+}
+
+
 p {
-    margin-right: 1%;
-    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  0%;
+    margin-bottom: 1%;
     width: 64%;
     text-align: justify;
 }
@@ -144,10 +158,15 @@ footer {
 .image{
     width: 40%;
     display: block;
-    margin: 0 8%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    margin-top: 1%;
 }
 table {
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   th, td {
@@ -225,6 +244,8 @@ table {
     
 
     p {
+        margin-right: auto;
+        margin-left: auto;
         margin-right: 1%;
         padding: 1%;
         width: 95%;
@@ -238,6 +259,12 @@ table {
         padding: 1%;
         margin-bottom: 0; 
         padding-bottom: 0; 
+    }
+
+    h4 {
+        margin-left: 2.5%;
+        display: inline-block;
+        vertical-align: top; 
     }
     
 
