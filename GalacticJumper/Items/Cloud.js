@@ -1,3 +1,0 @@
-class Cloud extends Item {
-    
-}

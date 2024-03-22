@@ -1,3 +1,0 @@
-class Bird extends Item {
-    
-}

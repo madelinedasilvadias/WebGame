@@ -1,3 +1,0 @@
-class Rocket extends Item {
-    
-}
