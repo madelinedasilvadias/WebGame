@@ -1,3 +1,0 @@
-class LunarOrbitState extends State {
-    
-}
