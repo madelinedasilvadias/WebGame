@@ -94,7 +94,6 @@ h5 {
     margin-left: 18%;
 }
 
-
 p {
     margin-left: auto;
     margin-right: auto;
@@ -129,14 +128,12 @@ aside {
     top: 40%;
     right: 3%;
     width: 30%;
-    max-width: 450px;
+    max-width: 400px;
     margin-left: 1%;
     background-color: white;
     box-shadow: 0 0 10px var(--gris);
     border-radius: 10px;
 }
-
-
 
 footer {
     background-color: var(--gris);
@@ -174,8 +171,14 @@ table {
     padding: 8px;
   }
 
+  #gameCanvas {
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+}
 
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 1080px) {
 
     p {
         margin-right: 1%;
@@ -193,12 +196,15 @@ table {
         padding-bottom: 0; 
     }
 
+    h4{
+        margin-left: 3%;
+    }
+
     .image {
         width: 75%;
         margin: 0 auto;
     }
 
-   
     aside {
         position: relative;
         top: auto;
@@ -229,8 +235,7 @@ table {
 
     }
 
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 720px) {
 
     nav ul li {
         display:block;
@@ -242,19 +247,15 @@ table {
         display:block; 
     }
     
-
     p {
         margin-right: auto;
         margin-left: auto;
-        margin-right: 1%;
         padding: 1%;
         width: 95%;
     }
+
     h2 {
-        font-weight: bold;
-        text-align: left;
-        border-bottom: 1px solid var(--gris)
-        ;
+        border-bottom: 1px solid var(--gris);
         width: 95%;
         padding: 1%;
         margin-bottom: 0; 
@@ -267,7 +268,6 @@ table {
         vertical-align: top; 
     }
     
-
     .image{
         width: 80%;
         margin: 0 auto;
