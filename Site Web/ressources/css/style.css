@@ -5,11 +5,12 @@
 
 :root {
     --violet: rgba(134, 92, 130, 1);
-    --gris: rgba(189,189,189,1);
+    --gris: rgba(185,185,185,1);
+    --grisOpaque : rgba(205, 205, 205, 1); 
 }
 
 * {
-    margin: 0;
+    margin: 1;
 }
 
 body {
@@ -66,10 +67,9 @@ h2 {
     font-weight: bold;
     text-align: left;
     border-bottom: 1px solid var(--gris);
-    width: 98%;
-    padding: 1%;
+    width: 64%;
     margin-bottom: 0; 
-    padding-bottom: 0; 
+    padding-top : 1% 
 }
 
 h3 {
@@ -86,17 +86,10 @@ h3 {
 h4 {
     display: inline-block; 
     vertical-align: top; 
-    margin-left: 18%;
-}
-
-h5 {
-    
-    margin-left: 18%;
 }
 
 p {
-    margin-left: auto;
-    margin-right: auto;
+
     margin-top:  0%;
     margin-bottom: 1%;
     width: 64%;
@@ -115,6 +108,12 @@ nav ul li {
 }
 nav ul li:hover {
     background-color: white;
+    color: var(--violet);
+    font-weight: bold;
+}
+
+nav ul li.hamburger:hover {
+    background-color: var(--grisOpaque);
     color: var(--violet);
     font-weight: bold;
 }
@@ -151,6 +150,8 @@ footer {
 .hamburger {
     display: none;
 }
+
+
 
 .image{
     width: 40%;
@@ -236,6 +237,13 @@ table {
     }
 
 @media only screen and (max-width: 720px) {
+    .menu-links {
+        display: none;
+    }
+    .menu-links.responsive {
+        display: flex;
+        flex-direction: column;
+    }
 
     nav ul li {
         display:block;
