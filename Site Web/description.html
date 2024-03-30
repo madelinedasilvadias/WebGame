@@ -131,6 +131,16 @@
                 x.className = "menu-links";
             }
         }
+        window.onload = function() {
+            var hasAside = document.querySelector('aside');
+            if (hasAside) {
+                var article = document.querySelector('article');
+            if (article) {
+                article.classList.add('has-aside');
+            }  
+             }
+        };
+
     </script>
 </body>
 </html>
