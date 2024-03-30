@@ -2,21 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:200,400,wght@1,1000&display=swap');
 
 
-
 :root {
     --violet: rgba(134, 92, 130, 1);
+    --violetOpaque : rgba(134, 92, 130, 0.3);
     --gris: rgba(185,185,185,1);
-    --grisOpaque : rgba(205, 205, 205, 1); 
-}
-
-* {
-    margin: 1;
+    --grisOpaque : rgba(205,205,205,1); 
 }
 
 body {
     padding: 1%;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+
+article.has-aside {
+    width: calc(97% - 400px);
 }
 
 header a {
@@ -67,7 +67,6 @@ h2 {
     font-weight: bold;
     text-align: left;
     border-bottom: 1px solid var(--gris);
-    width: calc(100vw - 550px);
     margin-bottom: 0; 
     padding-top : 1% 
 }
@@ -84,14 +83,9 @@ aside h3 {
     text-align: left;
 }
 
-h4 {
-    display: inline-block; 
-    vertical-align: top; 
-}
-
 p {
-    width: calc(100vw - 550px);
     text-align: justify;
+    margin-bottom: 0;
 }
 
 nav ul {
@@ -116,15 +110,12 @@ nav ul li.hamburger:hover {
     font-weight: bold;
 }
 
-li p {
-    width: 99%;
-}
-
 aside {
     position: absolute;
     top: 40%;
     right: 3%;
     width: 400px;
+    max-width: 99%;
     margin-left: 1%;
     background-color: white;
     box-shadow: 0 0 10px var(--gris);
@@ -132,16 +123,47 @@ aside {
     text-align: right;
 }
 
+table {
+    width: 100%;
+    border-width: 2px;
+    border-color: var(--violet);
+    border-collapse: collapse;
+    border-style: solid;
+}
+table th {
+    color:white;
+    background-color: var(--violet);
+    border-width: 1px;
+    padding: 8px;
+    text-align:left;
+    border-color: var(--violet);
+    border-style: solid;
+}
+table td {
+    padding: 8px;
+    border-width: 1px;
+    border-color: var(--violet);
+    border-style: solid;
+}
+
+table tr:hover {
+    background-color:var(--violetOpaque);
+}
+
+table tr a:hover  {
+    background-color:var(--violetOpaque);
+}
+
 footer {
     background-color: var(--gris);
-    padding: 3%;
+    padding: 2%;
     clear: both;
     margin-top: 1%;
 }
 
 #logo {
     float: right;
-    width: 15%;
+    width: 12%;
     transform: translateY(-50%);
 }
 
@@ -150,25 +172,26 @@ footer {
 }
 
 .image{
-    width: 40%;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0%;
     margin-top: 1%;
 }
+
 table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   
-  th, td {
+th, td {
     border: 1px solid black;
     padding: 8px;
-  }
+}
 
-  #gameCanvas {
+#gameCanvas {
     display: block;
     margin: 0 auto;
     background-color: black;
@@ -177,29 +200,12 @@ table {
 
 
 @media only screen and (max-width: 1080px) {
-
-    p {
-        margin-right: 1%;
-        padding: 1%;
-        width: 95%;
-    }
-
-    h2 {
-        font-weight: bold;
-        text-align: left;
-        border-bottom: 1px solid var(--gris);
-        width: 98%;
-        padding: 1%;
-        margin-bottom: 0; 
-        padding-bottom: 0; 
-    }
-
-    h4{
-        margin-left: 3%;
+    article.has-aside {
+        width: 99%;
     }
 
     .image {
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -208,7 +214,6 @@ table {
         top: auto;
         right: auto; 
         left: auto; 
-        width: 90%; 
         margin: 0 auto; 
         margin-top: 3%; 
         margin-bottom: 3%; 
@@ -226,10 +231,6 @@ table {
         width: 25%;
         transform: translateY(-50%);
     }
-    table {
-        width: 100%;
-        margin: 0 auto;
-    }
 
     }
 
@@ -237,6 +238,7 @@ table {
     .menu-links {
         display: none;
     }
+
     .menu-links.responsive {
         display: flex;
         flex-direction: column;
@@ -251,30 +253,9 @@ table {
     .hamburger {
         display:block; 
     }
-    
-    p {
-        margin-right: auto;
-        margin-left: auto;
-        padding: 1%;
-        width: 95%;
-    }
 
-    h2 {
-        border-bottom: 1px solid var(--gris);
-        width: 95%;
-        padding: 1%;
-        margin-bottom: 0; 
-        padding-bottom: 0; 
-    }
-
-    h4 {
-        margin-left: 2.5%;
-        display: inline-block;
-        vertical-align: top; 
-    }
-    
     .image{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
 
     }
@@ -290,6 +271,24 @@ table {
         float: right;
         width: 25%;
         transform: translateY(-50%);
+    }
+
+    table, tbody,tr, td {
+        display: block;
+        width: auto!important;
+    }
+
+    td:first-child {
+        color:white;
+        background-color: var(--violet);
+    }
+
+    td:first-child a {
+        color: white;
+    }
+
+    th {
+        display: none;
     }
 
     }
