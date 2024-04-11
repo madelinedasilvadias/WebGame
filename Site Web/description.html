@@ -57,7 +57,7 @@
 <main>
     <!-- Here is the starting point for the page content -->
     <section id="articles">
-        <article>
+        <article class="has-aside">
             <header>
                 <h2>Galactic Jumper</h2>
                 <p>By Nicole Paseri, Kevin Ferreira and Madeline da Silva Dias</p>
@@ -130,15 +130,6 @@
                 x.className = "menu-links";
             }
         }
-        window.onload = function() {
-            var hasAside = document.querySelector('aside');
-            if (hasAside) {
-                var article = document.querySelector('article');
-            if (article) {
-                article.classList.add('has-aside');
-            }  
-             }
-        };
 
     </script>
 </body>
