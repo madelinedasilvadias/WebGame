@@ -191,11 +191,8 @@ th, td {
     padding: 8px;
 }
 
-#gameCanvas {
-    display: block;
-    margin: 0 auto;
-    background-color: black;
-
+.small-image{
+    width: 25%;
 }
 
 
@@ -289,6 +286,11 @@ th, td {
 
     th {
         display: none;
+    }
+
+    .small-picture{
+        width: 25%;
+        max-width: 10px;
     }
 
     }
